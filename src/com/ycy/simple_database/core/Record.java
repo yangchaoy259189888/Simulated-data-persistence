@@ -55,6 +55,12 @@ public class Record {
     }
 
     public <T> List list(Class<?> klass) {
+        /**
+         * @param: [klass]
+         * @return: java.util.List
+         * @date: 2018/11/16
+         * @Description: 
+         */
         RecordDefinition<T> recordDefinition
                 = (RecordDefinition<T>) RecordBeanFactory.getRecord(klass);
         StringBuffer SQLString = new StringBuffer("SELECT ");
